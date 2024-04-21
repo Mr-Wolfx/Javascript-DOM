@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rubrica di DOM Matteo</title>
+    
+    <!-- CDN FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="min-vh-100 bg-main">
+    <!-- container per Titolo -->
+    <div class="container pt-5">
+        <div class="row pt-3">
+            <div class="col-12 d-flex justify-content-center">
+                <h1 class="display-1 text-acc">La mia Rubrica</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Container per bottoni e input -->
+    <div class="container-fluid text-acc pt-5">
+        <div class="row">
+            <!-- colonna con il mostra contatti -->
+            <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end align-items-center py-3 order-last order-md-first">
+                <button class="text-acc bg-purple my-border rounded-3 py-1 px-4 fw-bold my-button" id="showContactsBtn"> Mostra Contatti </button>
+            </div>
+            
+            <!-- colonna con i campi input -->
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center py-3">
+                <div class="input-group mb-4 px-5">
+                    <input type="text" class="form-control rounded-pill my-shadow" placeholder="Nome Contatto" aria-label="Nome Contatto" aria-describedby="contact-name" id="nameInput">
+                </div>
+                
+                <div class="input-group mb-3 px-5">
+                    <input type="number" class="form-control rounded-pill my-shadow" placeholder="Numero Contatto" aria-label="Numero Contatto" aria-describedby="contact-number" id="numberInput" >
+                </div>
+                
+                
+            </div>
+
+            <!-- Colonna con i bottoni cerca, aggiungi e rimuovi -->
+            <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-start py-3 order-first order-md-last">
+                <div class="d-flex flex-column justify-content-center align-items-center mx-3">
+                    <button class="my-icon bg-purple my-border text-acc" id="addContactBtn">
+                        <i class="fa-solid fa-plus fa-2x"></i>
+                    </button>
+                    <p class="pt-2">Aggiungi</p>
+                </div>
+                
+                <div class="d-flex flex-column justify-content-center align-items-center mx-3">
+                    <button class="my-icon bg-purple my-border text-acc" id="removeContactBtn">
+                        <i class="fa-regular fa-trash-can fa-2x"></i>
+                    </button>
+                    <p class="pt-2">Rimuovi</p>
+                </div>
+                
+                <div class="d-flex flex-column justify-content-center align-items-center mx-3">
+                    <button class="my-icon bg-purple my-border text-acc" id="searchContatcBtn">
+                        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                    </button>
+                    <p class="pt-2">Cerca</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container con le card dei contatti -->
+    <div class="container text-acc my-4">
+        <div class="row justify-content-center" id="cardWrapper">
+            <div class="col-12 col-lg-8 my-3">
+                <!-- qui dentro ci andranno le card dinamiche -->
+
+                
+
+
+        </div>
+    </div>
+    
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- MY JS -->
+    <script src="./main.js"></script>
+</body>
+</html>
